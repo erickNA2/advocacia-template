@@ -1,27 +1,33 @@
 import React from "react";
 
+import AreasAtuacao from "./components/AreasAtuacao";
+import DiferentialSection from "./components/DiferentialSection";
+import BeforeAfterSection from "./components/BeforeAfterSection";
+import AboutSection from "./components/AboutSection";
+import HeroSection from "./components/HeroSection";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
 export default function Home() {
 	return (
 		<>
-			<section id="hero" className="relative w-screen h-screen">
-				<h1>hero</h1>
+			<Header />
+			<section id="hero" className="relative w-screen min-h-screen flex items-center justify-center">
+				<HeroSection />
 			</section>
-
 			<section id="about" className="relative w-screen h-screen">
-				<h1>about</h1>
+				<AboutSection />
 			</section>
-
 			<section id="segments" className="relative w-screen h-screen">
-				<h1>segments</h1>
+				<AreasAtuacao />
 			</section>
-
 			<section id="diferential" className="relative w-screen h-screen">
-				<h1>diferential</h1>
+				<DiferentialSection />
 			</section>
-
 			<section id="beforeafter" className="relative w-screen h-screen">
-				<h1>beforeafter</h1>
+				<BeforeAfterSection />
 			</section>
+			<Footer />
 		</>
 	);
 }
