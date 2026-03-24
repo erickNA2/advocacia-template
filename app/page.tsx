@@ -1,33 +1,23 @@
-import React from "react";
-
-import AreasAtuacao from "./components/AreasAtuacao";
-import DiferentialSection from "./components/DiferentialSection";
-import BeforeAfterSection from "./components/BeforeAfterSection";
-import AboutSection from "./components/AboutSection";
-import HeroSection from "./components/HeroSection";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Field from "./components/Field";
+import Diferential from "./components/Diferential";
+import BeforeAfter from "./components/BeforeAfter";
+import About from "./components/About";
+import Hero from "./components/Hero";
 
 export default function Home() {
 	return (
 		<>
-			<Header />
-			<section id="hero" className="relative w-screen min-h-screen flex items-center justify-center">
-				<HeroSection />
-			</section>
-			<section id="about" className="relative w-screen h-screen">
-				<AboutSection />
-			</section>
-			<section id="segments" className="relative w-screen h-screen">
-				<AreasAtuacao />
-			</section>
-			<section id="diferential" className="relative w-screen h-screen">
-				<DiferentialSection />
-			</section>
-			<section id="beforeafter" className="relative w-screen h-screen">
-				<BeforeAfterSection />
-			</section>
-			<Footer />
+			<main className="relative px-4 md:px-10 overflow-x-hidden w-full bg-[#10151A] flex flex-col items-center space-y-20">
+				<Hero />
+
+				<About />
+
+				<Field />
+
+				<Diferential />
+
+				<BeforeAfter />
+			</main>
 		</>
 	);
 }
