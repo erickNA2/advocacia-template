@@ -12,9 +12,7 @@ export default function Hero() {
 						Criminal não se improvisa
 						<br />
 						Se enfrenta com{" "}
-						<span className="relative inline-block overflow-hidden align-middle text-[#F5D47A]">
-							estratégia
-						</span>
+						<span className="text-[#F5D47A]">estratégia</span>
 					</h1>
 					<p className="text-[#C7C7C7] text-base md:text-lg mb-8 max-w-lg">
 						Atuamos 24 horas com estratégia, urgência e sigilo
