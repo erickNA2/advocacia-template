@@ -7,6 +7,7 @@ import {
 	TfiLock,
 	TfiPrinter,
 } from "react-icons/tfi";
+import FadeIn from "./ui/FadeIn";
 
 const areas = [
 	{
@@ -53,26 +54,33 @@ export default function Field() {
 			id="field"
 			className="relative min-h-screen w-full flex flex-col items-center space-y-4"
 		>
-			<h2 className="text-3xl md:text-4xl font-bold text-center text-[#F5D47A]">
-				Áreas de Atuação
-			</h2>
-			<p className="text-[#C7C7C7] text-center">
-				Atuação completa em Direito Penal e Processo Penal
-			</p>
+			<FadeIn delay={0.2} direction="up">
+				<h2 className="text-3xl md:text-4xl font-bold text-center text-[#F5D47A]">
+					Áreas de Atuação
+				</h2>
+			</FadeIn>
+			<FadeIn delay={0.3} direction="up">
+				<p className="text-[#C7C7C7] text-center">
+					Atuação completa em Direito Penal e Processo Penal
+				</p>
+			</FadeIn>
 			<div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">
 				{areas.map((area, idx) => (
-					<div
+					<FadeIn
 						key={area.title}
-						className="bg-[#181F25] rounded-lg shadow-lg p-6 flex flex-col items-center text-center border border-[#232A31] hover:scale-105 transition-transform duration-200"
+						delay={0.4 + idx * 0.1}
+						direction="up"
 					>
-						<div className="text-4xl mb-4">{area.icon}</div>
-						<h3 className="text-xl font-semibold text-[#F5D47A] mb-2">
-							{area.title}
-						</h3>
-						<p className="text-[#C7C7C7] text-sm">
-							{area.description}
-						</p>
-					</div>
+						<div className="bg-[#181F25] rounded-lg shadow-lg p-6 flex flex-col items-center text-center border border-[#232A31] hover:scale-105 transition-transform duration-200 h-full">
+							<div className="text-4xl mb-4">{area.icon}</div>
+							<h3 className="text-xl font-semibold text-[#F5D47A] mb-2">
+								{area.title}
+							</h3>
+							<p className="text-[#C7C7C7] text-sm">
+								{area.description}
+							</p>
+						</div>
+					</FadeIn>
 				))}
 			</div>
 		</section>
