@@ -3,6 +3,7 @@ import Diferential from "./components/Diferential";
 import BeforeAfter from "./components/BeforeAfter";
 import About from "./components/About";
 import Hero from "./components/Hero";
+import Whatsapp from "./components/ui/Whatsapp";
 
 export default function Home() {
 	return (
@@ -17,6 +18,8 @@ export default function Home() {
 				<Diferential />
 
 				<BeforeAfter />
+
+				<Whatsapp></Whatsapp>
 			</main>
 		</>
 	);

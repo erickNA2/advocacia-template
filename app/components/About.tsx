@@ -43,14 +43,14 @@ export default function About() {
 						Especialistas em Direito Penal com atuação nacional
 					</h2>
 					<p className="text-[#C7C7C7] text-base mb-6">
-						O escritório Pires, Carvalho & Oliveira – Advocacia
-						Criminal é referência em defesa penal estratégica, com
-						atuação exclusiva na área criminal. Formado por uma
-						equipe de advogados criminalistas experientes, o
-						escritório atende com excelência casos de urgência,
-						investigação, prisão em flagrante, habeas corpus e
-						tribunal do júri, garantindo atendimento 24 horas e
-						representação técnica de alto nível.
+						O escritório Advocacia Criminal é referência em defesa
+						penal estratégica, com atuação exclusiva na área
+						criminal. Formado por uma equipe de advogados
+						criminalistas experientes, o escritório atende com
+						excelência casos de urgência, investigação, prisão em
+						flagrante, habeas corpus e tribunal do júri, garantindo
+						atendimento 24 horas e representação técnica de alto
+						nível.
 					</p>
 					<p className="text-[#C7C7C7] text-base mb-6">
 						Com atuação prioritária no centro-oeste Brasileiro,
