@@ -24,7 +24,7 @@ export default function Hero() {
 	return (
 		<section
 			id="hero"
-			className="relative h-[110vh] md:h-screen w-full flex flex-col justify-center items-center overflow-hidden mt-auto md:m-0"
+			className="relative h-[110vh] md:h-screen w-full flex flex-col justify-center items-center overflow-hidden mt-20 md:m-0"
 			aria-labelledby="hero-heading"
 		>
 			<div className="relative w-full flex flex-col md:flex-row items-center justify-between gap-8 z-10">
