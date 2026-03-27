@@ -1,5 +1,6 @@
 import { TfiAgenda, TfiAlignCenter, TfiKey, TfiLock } from "react-icons/tfi";
 import Image from "next/image";
+import FadeIn from "./ui/FadeIn";
 
 const diferentialItems = [
 	{
@@ -36,34 +37,41 @@ export default function Diferential() {
 				className="absolute top-0 left-0 mb-4 z-1 rounded-xl object-cover"
 			/>
 			<div className="max-w-6xl w-full  mt-10 px-2 flex flex-col md:flex-row items-center justify-between gap-8 z-40">
-				<div className="flex-1 flex flex-col items-start justify-center">
-					<div className="mb-6">
-						<h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
-							Por que escolher{" "}
-							<span className="text-[#F5D47A]">
-								Advocacia SA?
-							</span>
-						</h2>
-						<button className="mt-4 bg-[#F5D47A] text-[#10151A] font-semibold px-6 py-2 rounded-full shadow hover:bg-[#e6c15f] transition">
-							Falar com Advogado
-						</button>
-					</div>
-				</div>
-				<div className="flex-1 flex flex-col space-y-10">
-					{diferentialItems.map((item, idx) => (
-						<div
-							key={idx}
-							className="flex items-center gap-4 border-b border-[#F5D47A] pb-4"
-						>
-							<span className="text-2xl text-[#F5D47A]">
-								{item.icon}
-							</span>
-							<span className="text-white text-lg">
-								{item.text}
-							</span>
+				<FadeIn delay={0.2} direction="left">
+					<div className="flex-1 flex flex-col items-start justify-center">
+						<div className="mb-6">
+							<h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
+								Por que escolher{" "}
+								<span className="text-[#F5D47A]">
+									Advocacia SA?
+								</span>
+							</h2>
+							<button className="mt-4 bg-[#F5D47A] text-[#10151A] font-semibold px-6 py-2 rounded-full shadow hover:bg-[#e6c15f] transition">
+								Falar com Advogado
+							</button>
 						</div>
-					))}
-				</div>
+					</div>
+				</FadeIn>
+				<FadeIn delay={0.4} direction="right">
+					<div className="flex-1 flex flex-col space-y-10">
+						{diferentialItems.map((item, idx) => (
+							<FadeIn
+								key={idx}
+								delay={0.5 + idx * 0.1}
+								direction="up"
+							>
+								<div className="flex items-center gap-4 border-b border-[#F5D47A] pb-4">
+									<span className="text-2xl text-[#F5D47A]">
+										{item.icon}
+									</span>
+									<span className="text-white text-lg">
+										{item.text}
+									</span>
+								</div>
+							</FadeIn>
+						))}
+					</div>
+				</FadeIn>
 			</div>
 			<div className="relative mt-12 w-full max-w-3xl rounded-xl border-1 border-[#F5D47A] shadow-lg z-40">
 				<Image

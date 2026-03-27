@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
 	return (
 		<footer className="w-full border-t border-[#232A31] bg-[#10151A] md:px-10 py-10 flex flex-col items-center relative">
@@ -11,8 +13,24 @@ export default function Footer() {
 					exclusiva na área criminal.
 				</p>
 				<hr className="w-full border-[#F5D47A] my-4" />
-				<p className="text-[#C7C7C7] text-center text-sm">
-					©2026 – Erick & Arthur – Todos os direitos reservados.
+				<p className="text-[#c7c7c7ec] text-center text-md">
+					©2026 –{" "}
+					<Link
+						href="https://erick-nunes-dev.com.br"
+						className="text-blue-300 hover:underline"
+						target="_blank"
+					>
+						Erick
+					</Link>{" "}
+					&{" "}
+					<Link
+						href={"https://www.linkedin.com/in/silemanali/"}
+						className="text-blue-300 hover:underline"
+						target="_blank"
+					>
+						Arthur
+					</Link>{" "}
+					– Todos os direitos reservados.
 				</p>
 			</div>
 		</footer>
